@@ -1,9 +1,10 @@
+import {PageTitle} from "../components/";
 
 const Home = () => {
 
     return (
         <>
-            Khelo
+            <PageTitle title="Home sweet home"/>
         </>
     )
 }

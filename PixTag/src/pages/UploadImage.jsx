@@ -1,9 +1,11 @@
+import { Link, Button, Center, Text } from "@chakra-ui/react";
+import {PageTitle} from "../components/";
 
 const UploadImage = () => {
 
     return (
         <>
-            UPLOAD IMAG
+            <PageTitle title="Upload new image"/>
         </>
     )
 }
