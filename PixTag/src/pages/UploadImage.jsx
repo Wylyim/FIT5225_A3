@@ -3,6 +3,7 @@ const UploadImage = () => {
 
     return (
         <>
+            UPLOAD IMAG
         </>
     )
 }

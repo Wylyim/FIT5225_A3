@@ -8,7 +8,10 @@ import {
     UpdateTags,
     UploadImage
 } from './pages'
-import { BrowserRouter, Routes, Route } from "react-dom";
+import {
+    SideBar
+} from './components'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ChakraProvider, HStack } from '@chakra-ui/react'
 import './App.css'
 
@@ -16,15 +19,16 @@ function App() {
 
     return (
         <>
-            <HStack>
-                <SideBar/>
-                <BrowserRouter>
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/upload" element={<UploadImage />} />
-                    </Routes>
-                </BrowserRouter>
-            </HStack>
+            <BrowserRouter>
+                <HStack w="100em">
+                    <SideBar/>
+                        <Routes>
+                            <Route path="images/" element={<Home />}/>
+                            <Route path="images/upload" element={<UploadImage />}/>
+                        </Routes>
+                </HStack>
+            </BrowserRouter>
+
         </>
     )
 }
