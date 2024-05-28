@@ -26,10 +26,10 @@ const SideBar = () => {
     console.log(sideBarButtons)
 
     return (
-        <Box minW="10em" maxH="100%" bg="#1E2E83">
-            <Box h="2em"/>
+        <Box minW="10em" h="100%" bg="#1E2E83">
             <Center axis="horizontal">
-                <Flex h="100vh" flexDirection="column">
+                <Flex flexDirection="column" h="100vh">
+                    <Box h="2em"/>
                     <VStack>
                         {sideBarButtons}
                     </VStack>
@@ -41,9 +41,11 @@ const SideBar = () => {
                         color="black"
                         w="8rem"
                     />
+                    <Box h="1em"/>
                 </Flex>
+
             </Center>
-            <Box h="1em" />
+
         </Box>
     )
 }

@@ -17,9 +17,9 @@ import { HStack } from '@chakra-ui/react'
 function App() {
 
     return (
-        <>
+        <div>
             <BrowserRouter>
-                <HStack w="100%" maxH="100%">
+                <HStack w="100%" h="100vh">
                     <SideBar/>
                         <Routes>
                             <Route path="images/" element={<Home />}/>
@@ -33,7 +33,7 @@ function App() {
                         </Routes>
                 </HStack>
             </BrowserRouter>
-        </>
+        </div>
     )
 }
 
