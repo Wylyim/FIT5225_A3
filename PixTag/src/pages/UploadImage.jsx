@@ -1,12 +1,15 @@
-import { Link, Button, Center, Text } from "@chakra-ui/react";
-import {PageTitle} from "../components/";
+import {Box, VStack} from "@chakra-ui/react";
+import {PageTitle, FileUploadBox} from "../components/";
 
 const UploadImage = () => {
 
     return (
-        <>
-            <PageTitle title="Upload new image"/>
-        </>
+        <Box w="100%">
+            <VStack h="100%">
+                <PageTitle title="Upload new image"/>
+                <FileUploadBox />
+            </VStack>
+        </Box>
     )
 }
 

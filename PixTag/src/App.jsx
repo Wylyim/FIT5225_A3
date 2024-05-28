@@ -12,15 +12,15 @@ import {
     SideBar
 } from './components'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ChakraProvider, HStack } from '@chakra-ui/react'
-import './App.css'
+import { HStack } from '@chakra-ui/react'
+import './styles/App.css'
 
 function App() {
 
     return (
         <>
             <BrowserRouter>
-                <HStack w="100em">
+                <HStack w="100vw">
                     <SideBar/>
                         <Routes>
                             <Route path="images/" element={<Home />}/>
