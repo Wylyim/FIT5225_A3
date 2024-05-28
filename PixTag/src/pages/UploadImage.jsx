@@ -1,7 +1,13 @@
 import {Box, Flex, Center} from "@chakra-ui/react";
 import {PageTitle, FileUpload} from "../components/";
+import {useState} from "react";
 
 const UploadImage = () => {
+    const [response, setResponse] = useState(null)
+
+    const fetchRequest = () => {
+
+    }
 
     return (
         <Box w="100%" t="0px">
@@ -10,7 +16,10 @@ const UploadImage = () => {
                     <Box h="4em"/>
                     <PageTitle title="Upload new image"/>
                     <Box h="1em"/>
-                    <FileUpload />
+                    <FileUpload
+                        fetchRequest={fetchRequest()}
+                        resSetter={setResponse}
+                    />
                 </Flex>
             </Center>
         </Box>

@@ -4,13 +4,13 @@ import ActionButton from "./ActionButton.jsx";
 
 const SideBar = () => {
     const pages = [
-        {title:"Home", url:"images/"},
+        // {title:"Home", url:"images/"},
         {title:"Upload\nimage", url:"images/upload"},
+        {title:"Match\nimage", url:"images/match"},
         {title:"Find\nthumbnails", url:"images/query-thumb-url"},
         {title:"Query\ntags", url:"images/query-tags"},
-        {title:"Delete\nimage", url:"images/delete"},
-        {title:"Match\nimage", url:"images/match"},
         {title:"Update\ntags", url:"images/update-tags"},
+        {title:"Delete\nimage", url:"images/delete"}
     ]   
     
     const sideBarButtons = pages.map((page) => {

@@ -2,7 +2,7 @@ import {Box, ButtonGroup, Center, Image, VStack} from "@chakra-ui/react";
 import {useState} from "react";
 import {ActionButton} from "./index.jsx";
 
-const FileUpload = ({fetchRequest}) => {
+const FileUpload = ({fetchRequest, resSetter}) => {
     const [image, setImage] = useState(null);
     const [inputKey, setInputKey] = useState(Date.now());
 
@@ -10,6 +10,7 @@ const FileUpload = ({fetchRequest}) => {
         fetchRequest()
 
         // toasts
+        resSetter('404 not found')
     }
 
     const clearImage = () => {
