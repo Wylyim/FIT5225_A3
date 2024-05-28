@@ -13,14 +13,13 @@ import {
 } from './components'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HStack } from '@chakra-ui/react'
-import './styles/App.css'
 
 function App() {
 
     return (
         <>
             <BrowserRouter>
-                <HStack w="100vw">
+                <HStack w="100%" maxH="100%">
                     <SideBar/>
                         <Routes>
                             <Route path="images/" element={<Home />}/>
@@ -34,7 +33,6 @@ function App() {
                         </Routes>
                 </HStack>
             </BrowserRouter>
-
         </>
     )
 }

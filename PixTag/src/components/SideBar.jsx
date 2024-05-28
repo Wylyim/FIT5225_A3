@@ -26,7 +26,7 @@ const SideBar = () => {
     console.log(sideBarButtons)
 
     return (
-        <Box w="10em" h="100%" bg="#1E2E83">
+        <Box minW="10em" maxH="100%" bg="#1E2E83">
             <Box h="2em"/>
             <Center axis="horizontal">
                 <Flex h="100vh" flexDirection="column">
