@@ -22,7 +22,8 @@ function App() {
                 <HStack w="100%" h="100vh">
                     <SideBar/>
                         <Routes>
-                            <Route path="images/" element={<Home />}/>
+                            <Route path="auth/" element={<RegistrationPage />}/>
+
                             <Route path="images/upload" element={<UploadImage />}/>
                             <Route path="images/match" element={<FindMatchingImage />}/>
                             <Route path="images/query-tags" element={<QueryTags />}/>

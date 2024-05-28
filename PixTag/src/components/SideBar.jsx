@@ -7,7 +7,7 @@ const SideBar = () => {
         // {title:"Home", url:"images/"},
         {title:"Upload\nimage", url:"images/upload"},
         {title:"Match\nimage", url:"images/match"},
-        {title:"Find\nthumbnails", url:"images/query-thumb-url"},
+        {title:"Query\nthumbnail", url:"images/query-thumb-url"},
         {title:"Query\ntags", url:"images/query-tags"},
         {title:"Update\ntags", url:"images/update-tags"},
         {title:"Delete\nimage", url:"images/delete"}
